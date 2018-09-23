@@ -9,6 +9,8 @@ import { SchedulePage } from '../schedule/schedule';
 import { SessionDetailPage } from '../session-detail/session-detail';
 import { SpeakerDetailPage } from '../speaker-detail/speaker-detail';
 import { SpeakerListPage } from '../speaker-list/speaker-list';
+import { CarsPage } from '../cars/cars.page';
+import { CarPage } from '../car/car.page';
 
 
 const routes: Routes = [
@@ -17,6 +19,17 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       // tab one
+      {
+        path: 'cars',
+        component: CarsPage,
+        outlet: 'cars'
+      },
+      {
+        path: 'cars/:carId',
+        component: CarPage,
+        outlet: 'cars'
+      },
+      // tab two
       {
         path: 'schedule',
         component: SchedulePage,
@@ -27,7 +40,7 @@ const routes: Routes = [
         component: SessionDetailPage,
         outlet: 'schedule'
       },
-      // tab two
+      // tab three
       {
         path: 'speakers',
         component: SpeakerListPage,
@@ -43,18 +56,6 @@ const routes: Routes = [
         component: SpeakerDetailPage,
         outlet: 'speakers'
       },
-      // tab three
-      {
-        path: 'map',
-        component: MapPage,
-        outlet: 'map'
-      },
-      // tab four
-      {
-        path: 'about',
-        component: AboutPage,
-        outlet: 'about'
-      }
     ]
   }
 ];

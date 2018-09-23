@@ -11,6 +11,8 @@ import { ScheduleModule } from '../schedule/schedule.module';
 import { SessionDetailModule } from '../session-detail/session-detail.module';
 import { SpeakerDetailModule } from '../speaker-detail/speaker-detail.module';
 import { SpeakerListModule } from '../speaker-list/speaker-list.module';
+import { CarsPageModule } from '../cars/cars.module';
+import { CarPageModule } from '../car/car.module';
 
 @NgModule({
   imports: [
@@ -22,7 +24,9 @@ import { SpeakerListModule } from '../speaker-list/speaker-list.module';
     SessionDetailModule,
     SpeakerDetailModule,
     SpeakerListModule,
-    TabsPageRoutingModule
+    TabsPageRoutingModule,
+    CarsPageModule,
+    CarPageModule
   ],
   declarations: [
     TabsPage,
