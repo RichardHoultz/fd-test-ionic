@@ -25,7 +25,7 @@ const routes: Routes = [
         outlet: 'cars'
       },
       {
-        path: 'cars/:carId',
+        path: 'car/:carId',
         component: CarPage,
         outlet: 'cars'
       },
