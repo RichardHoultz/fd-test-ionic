@@ -24,7 +24,7 @@ export class TutorialPage {
 
   startApp() {
     this.router
-      .navigateByUrl('/app/tabs/(schedule:schedule)')
+      .navigateByUrl('/app/tabs/(cars:cars)')
       .then(() => this.storage.set('ion_did_tutorial', 'true'));
   }
 
